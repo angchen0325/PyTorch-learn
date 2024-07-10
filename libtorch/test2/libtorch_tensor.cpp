@@ -4,7 +4,7 @@
 
 int main() {
 
-    torch::Tensor foo = torch::tensor({1.0, 2.0, 3.0, 4.0});
+    torch::Tensor foo = torch::tensor({1.0, 2.0, 3.0, 7.0});
 
     float arr[] = {1.0, 2.0, 3.0, 4.0};
     torch::Tensor bar1 = torch::from_blob(arr, {1,4});

@@ -3,7 +3,7 @@
 
 int main() {
   // 使用arange构造一个一维向量，再用reshape变换到5x5的矩阵
-  torch::Tensor foo = torch::arange(25).reshape({5, 5});
+  torch::Tensor foo = torch::arange(36).reshape({6, 6});
 
   // 计算矩阵的迹
   torch::Tensor bar = torch::einsum("ii", foo);
