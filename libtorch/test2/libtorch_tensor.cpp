@@ -28,4 +28,12 @@ int main() {
     std::cout << "==> device of foo is:\n " << foo.device() << std::endl;
     std::cout << "==> device of foo_mps is:\n " << foo_mps.device() << std::endl;
 
+    torch::Tensor foo1 = torch::randn({1,2,3});
+
+    auto value1 = foo1[0][1][1];
+    std::cout << "==> foo1[0][1][1] is:\n " << value1 << std::endl;
+    auto value2 = foo1.index({0,1,1});
+    std::cout << "==> foo1.index({0,1,1}) is:\n " << value2 << std::endl;
+
+
 }
