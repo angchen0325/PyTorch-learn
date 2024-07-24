@@ -1,6 +1,9 @@
 data/
 models/
+figures/
 
 libtorch/test*/build/
 !libtorch/test*/*.cpp
 !libtorch/test*/CMakeLists.txt
+
+pytorch_illustration.pptx
