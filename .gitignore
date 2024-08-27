@@ -7,3 +7,5 @@ libtorch/test*/build/
 !libtorch/test*/CMakeLists.txt
 
 pytorch_illustration.pptx
+
+*.pth
